@@ -2,7 +2,7 @@
 [x] Initialize TypeScript Node.js project with Express
 [ ] Configure TypeScript compilation and build scripts  
 [ ] Set up ESLint, Prettier, and Jest for code quality
-[ ] Configure environment variables and dotenv
+[ ] Configure environment variables and dotenv 🦀
 [ ] Set up MongoDB/PostgreSQL database connection
 [ ] Implement basic Express server with TypeScript
 [ ] Configure CORS and security middleware
