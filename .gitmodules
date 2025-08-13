@@ -1,0 +1,3 @@
+[submodule "vendor/trello"]
+	path = vendor/trello
+	url = https://github.com/GUNGODD/trello.git
