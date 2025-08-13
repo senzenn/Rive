@@ -1,37 +1,33 @@
 {
-  "name": "real-time",
+  "name": "nextauth-boilerplate",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage",
-    "test:watch:coverage": "jest --watch --coverage",
-    "test:watch:watchAll": "jest --watch --watchAll",
-    "test:watch:watchAll:coverage": "jest --watch --watchAll --coverage",
-    "test:watch:watchAll:watchAll:coverage": "jest --watch --watchAll --watchAll --coverage"
+    "lint": "next lint"
   },
   "dependencies": {
-    "@gsap/react": "^2.1.2",
-    "gsap": "^3.13.0",
-    "next": "15.4.6",
-    "next-auth": "5.0.0-beta.29",
-    "react": "19.1.0",
-    "react-dom": "19.1.0"
+    "@auth/core": "^0.34.1",
+    "@neondatabase/serverless": "^1.0.1",
+    "dotenv": "^16.4.5",
+    "mongoose": "^8.4.4",
+    "next": "^15.0.1",
+    "next-auth": "^4.24.7",
+    "prompts": "^2.4.2",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-icons": "^5.2.1"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3",
-    "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "eslint": "^9",
-    "eslint-config-next": "15.4.6",
-    "tailwindcss": "^4",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.4",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
     "typescript": "^5"
   }
 }

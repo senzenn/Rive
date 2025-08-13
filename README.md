@@ -1,37 +1,84 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# NextAuth Boilerplate
+
+[https://nextauth-boilerplate-kappa.vercel.app](https://nextauth-boilerplate-kappa.vercel.app)
+
+A simple Next.js authentication boilerplate using NextAuth.js, TypeScript, and MongoDB that uses Google and GitHub as default auth providers.
+
+## Prerequisites
+
+Before you begin, ensure you have met the following requirements:
+
+- Node.js (v20 or later)
+- npm or yarn
+- MongoDB database
 
 ## Getting Started
 
-First, run the development server:
+1. Clone the repository:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+   `git clone https://github.com/aumbriac/nextauth-boilerplate.git`
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+   ##### then
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+   `cd nextauth-boilerplate`
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. Install dependencies:
 
-## Learn More
+   `npm install`
 
-To learn more about Next.js, take a look at the following resources:
+   ##### or
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   `yarn install`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. Set up environment variables:
 
-## Deploy on Vercel
+   Create a `.env.local` file in the root directory and add the following variables:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```
+  DATABASE_URL=your_neon_postgres_connection_string  
+   GOOGLE_ID=your_google_client_id
+   GOOGLE_SECRET=your_google_client_secret
+   GITHUB_ID=your_github_client_id
+   GITHUB_SECRET=your_github_client_secret
+   NEXTAUTH_URL=http://localhost:3000
+   NEXTAUTH_SECRET=your_nextauth_secret
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# Rive
+   Replace the placeholder values with your actual credentials, which can be obtained from the following sources:
+
+   - [MongoDB](https://www.mongodb.com/cloud/atlas)
+   - [Google Developers Console](https://console.developers.google.com/)
+   - [GitHub Developers Settings](https://github.com/settings/developers)
+
+   To generate the NEXTAUTH_SECRET for NextAuth, you can use the following command in your terminal:
+
+   `openssl rand -base64 32`
+
+4. Run the development server:
+
+   `npm run dev`
+
+   ##### or
+
+   `yarn dev`
+
+5. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgements
+
+- [Next.js](https://nextjs.org/)
+- [NextAuth.js](https://next-auth.js.org/)
+- [MongoDB](https://www.mongodb.com/)
+- [Tailwind CSS](https://tailwindcss.com/)
+
+## Support
+
+If you have any questions or need help, please open an issue in the GitHub repository.
