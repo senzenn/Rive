@@ -6,7 +6,14 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "test:watch:coverage": "jest --watch --coverage",
+    "test:watch:watchAll": "jest --watch --watchAll",
+    "test:watch:watchAll:coverage": "jest --watch --watchAll --coverage",
+    "test:watch:watchAll:watchAll:coverage": "jest --watch --watchAll --watchAll --coverage"
   },
   "dependencies": {
     "react": "19.1.0",
